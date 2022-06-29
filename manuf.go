@@ -7,6 +7,8 @@ import (
     "io"
     "strconv"
     "fmt"
+    "path"
+    "runtime"
 )
 
 const hexDigit = "0123456789ABCDEF"
