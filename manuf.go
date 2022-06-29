@@ -16,7 +16,7 @@ var d map[int]interface{}
 
 func init() {
     d = make(map[int]interface{})
-    _, file, _, _ := runtime.Caller(0)
+/*    _, file, _, _ := runtime.Caller(0)
     f := path.Join(path.Dir(file), "manuf")
     err := readLine(f, func(s string) {
         l := strings.Split(s, "\t")
@@ -26,7 +26,7 @@ func init() {
     })
     if err != nil {
         panic(err)
-    }
+    }*/
 }
 
 func parse(mac, comment string) {
