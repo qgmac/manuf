@@ -6,6 +6,7 @@ import (
     "strings"
     "io"
     "strconv"
+    "fmt"
 )
 
 const hexDigit = "0123456789ABCDEF"
@@ -14,7 +15,7 @@ var d map[int]interface{}
 
 func init() {
     d = make(map[int]interface{})
-/*    _, file, _, _ := runtime.Caller(0)
+    _, file, _, _ := runtime.Caller(0)
     f := path.Join(path.Dir(file), "manuf")
     err := readLine(f, func(s string) {
         l := strings.Split(s, "\t")
@@ -23,8 +24,8 @@ func init() {
         }
     })
     if err != nil {
-        panic(err)
-    }*/
+        fmt.Println(err)
+    }
 }
 
 func parse(mac, comment string) {
